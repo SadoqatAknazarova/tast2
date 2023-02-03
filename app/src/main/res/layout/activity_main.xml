@@ -5,66 +5,125 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:id="@+id/constraint"
+    android:visibility="gone"
+    android:layout_height="match_parent">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"></LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+ <ImageView
+     android:id="@+id/imageView7"
+     android:layout_width="517dp"
+     android:layout_height="857dp"
+     android:scaleType="fitXY"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.188"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:srcCompat="@drawable/pic6" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="208dp"
-        android:layout_height="186dp"
-        app:srcCompat="@drawable/pic1"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="39dp" />
+ <Button
+     android:id="@+id/button"
+     android:layout_width="25dp"
+     android:layout_height="66dp"
+     android:layout_marginStart="36dp"
+     android:layout_marginTop="316dp"
+android:backgroundTint="#807A7A"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="213dp"
-        android:layout_height="261dp"
-        app:srcCompat="@drawable/pic2"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="1dp" />
+ <Button
+     android:id="@+id/button2"
+     android:layout_width="25dp"
+     android:layout_height="66dp"
+     android:layout_marginTop="316dp"
+     android:layout_marginEnd="36dp"
+     android:backgroundTint="#807A7A"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+android:id="@+id/line1"
+    android:visibility="visible"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="223dp"
-        android:layout_height="216dp"
-        app:srcCompat="@drawable/pic3"
-        tools:layout_editor_absoluteX="-18dp"
-        tools:layout_editor_absoluteY="225dp" />
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"
+     android:orientation="horizontal"
+     android:weightSum="2">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="215dp"
-        android:layout_height="190dp"
-        app:srcCompat="@drawable/pic4"
-        tools:layout_editor_absoluteX="213dp"
-        tools:layout_editor_absoluteY="247dp" />
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+     android:scaleType="fitXY"
+      app:srcCompat="@drawable/pic1" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="209dp"
-        android:layout_height="209dp"
-        app:srcCompat="@drawable/pic5"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="429dp" />
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:scaleType="fitXY"
+      app:srcCompat="@drawable/pic2" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="204dp"
-        android:layout_height="239dp"
-        app:srcCompat="@drawable/pic6"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="416dp" />
+ </LinearLayout>
 
 
+ <LinearLayout
+     android:weightSum="2"
+     android:orientation="horizontal"
+     android:layout_weight="1"
+     android:layout_width="match_parent"
+     android:layout_height="0dp">
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:scaleType="fitXY"
+      android:layout_weight="1"
+      app:srcCompat="@drawable/pic3" />
+
+  <ImageView
+      android:layout_weight="1"
+      android:id="@+id/imageView4"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+
+      android:scaleType="fitXY"
+      app:srcCompat="@drawable/pic4" />
+ </LinearLayout>
+ <LinearLayout
+     android:layout_weight="1"
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:orientation="horizontal"
+     android:weightSum="2">
+
+
+
+  <ImageView
+      android:layout_weight="1"
+      android:scaleType="fitXY"
+     android:id="@+id/imageView5"
+     android:layout_width="0dp"
+    android:layout_height="wrap_content"
+     app:srcCompat="@drawable/pic5" />
+
+ <ImageView
+     android:layout_weight="1"
+     android:scaleType="fitXY"
+     android:id="@+id/imageView6"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:srcCompat="@drawable/pic6" />
+
+</LinearLayout>
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
