@@ -8,7 +8,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:id="@+id/constraint"
-    android:visibility="gone"
+    android:visibility="visible"
     android:layout_height="match_parent">
 
  <ImageView
@@ -41,10 +41,21 @@ android:backgroundTint="#807A7A"
      android:backgroundTint="#807A7A"
      app:layout_constraintEnd_toEndOf="parent"
      app:layout_constraintTop_toTopOf="parent" />
+
+ <Button
+     android:id="@+id/button3"
+     android:layout_width="71dp"
+     android:layout_height="37dp"
+     android:layout_marginStart="308dp"
+     android:layout_marginTop="32dp"
+     android:text="exit"
+     android:backgroundTint="#7A7676"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 <LinearLayout
 android:id="@+id/line1"
-    android:visibility="visible"
+    android:visibility="gone"
     android:weightSum="3"
     android:orientation="vertical"
     android:layout_width="match_parent"
